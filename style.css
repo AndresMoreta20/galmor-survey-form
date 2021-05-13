@@ -1,0 +1,31 @@
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  height: auto;
+  
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/galmor-survey-bavkground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0
+  
+}
+#form-container {
+  background-color: #EADDCA;
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8%;
+  margin-top: 15%;
+}
+#survey-form{
+  padding: 30px;
+}
+
+
+  
