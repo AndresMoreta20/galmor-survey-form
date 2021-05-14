@@ -5,61 +5,64 @@
   <meta charset="utf-8">
   <meta lang="en">
   <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 <div id="wrapper">
-<body>
-  <div id="form-container">
-    <form id="survey-form">
-      <div id="title-container">
-        <h1 id="title">¿Buscas atención personalizada?</h1>
-      </div>
 
-      <h2 id="description">Llena tus datos en esta forma y nos comunicaremos contigo</h2>
-
-      <div id="name-container">
-        <label for="name" id="name-label">Nombre</label>
-        <input id="name" type="text" name="name" placeholder="Ingrese su nombre" required>
-      </div>
-      <div id="email-container">
-        <label for="email" id="email-label">e-mail</label>
-        <input id="email" type="email" name="email" placeholder="Ingrese su email" required>
-      </div>
-      <div id="number-container">
-        <label for="number" id="number-label">Edad</label><br>
-        <input type="number" id="number" name="number" placeholder="ingrese su edad" min="1" max="99" required><br>
-      </div>
-
-      <div id="dropdown-container">
-        <label for="dropdown">¿Qué servicio le interesa?</label><br>
-        <select id="dropdown">
-          <option value="cursos">Cursos</option>
-          <option value="personalizados">Miniaturas personalizadas</option>
-          <option value="visita">Visita nuestra tienda</option>
-        </select>
-      </div>
-      <div id="radio-buttons">
-        <p>¿Cómo se enteró de nuestra página?</p>
-
-        <label><input type="radio" name="references" value="social-network" checked>Redes Sociales</label><br>
-        <label><input type="radio" name="references" value="recommendations">Recomendaciones</label><br>
-        <label><input type="radio" name="references" value="other">Otros</label><br>
-        <!--     <input type="text" name="references" placeholder="Compartanos como se enteró de nuestro negocio"> -->
-        <div id="check-boxes">
-          <p>¿Qué modelos de miniaturas le gusta más?</p>
-          <label><input type="checkbox" value="fachada">Fachadas</label><br>
-          <label><input type="checkbox" value="belen">Belenes</label><br>
-          <label><input type="checkbox" value="estructura">Mini estructuras</label>
+  <body>
+    <div id="form-container">
+      <form id="survey-form">
+        <div id="title-container">
+          <h1 id="title">¿Buscas atención personalizada?</h1>
         </div>
 
-      </div>
-      <div id="textarea-container">
-        <textarea rows="8" cols="60" placeholder="Nos gustaría leer tus sugerencias..."></textarea><br>
-      </div>
-      <input id="submit" type="submit" value="submit">
-    </form>
-  </div>
+        <h2 id="description">Llena tus datos en esta forma y nos comunicaremos contigo</h2>
 
-</body>
+        <div class="form-input" id="name-container">
+          <label for="name" id="name-label">Nombre</label><br>
+          <input class="input-box" id="name" type="text" name="name" placeholder="Ingrese su nombre" required>
+        </div>
+        <div class="form-input" id="email-container">
+          <label for="email" id="email-label">e-mail</label><br>
+          <input class="input-box" id="email" type="email" name="email" placeholder="Ingrese su email" required>
+        </div>
+        <div class="form-input" id="number-container">
+          <label for="number" id="number-label">Edad</label><br>
+          <input class="input-box" type="number" id="number" name="number" placeholder="Edad" min="1" max="99" required><br>
+        </div>
+
+        <div class="form-input" id="dropdown-container">
+          <label for="dropdown">¿Qué servicio le interesa?</label><br>
+          <select id="dropdown">
+            <option value="cursos">Cursos</option>
+            <option value="personalizados">Miniaturas personalizadas</option>
+            <option value="visita">Visita nuestra tienda</option>
+          </select>
+        </div>
+        <div class="form-input" id="radio-buttons">
+          <p>¿Cómo se enteró de nuestra página?</p>
+
+          <label><input type="radio" name="references" value="social-network" checked>Redes Sociales</label><br>
+          <label><input type="radio" name="references" value="recommendations">Recomendaciones</label><br>
+          <label><input type="radio" name="references" value="other">Otros</label><br>
+          <!--     <input type="text" name="references" placeholder="Compartanos como se enteró de nuestro negocio"> -->
+          <div class="form-input" id="check-boxes">
+            <p>¿Qué modelos de miniaturas le gusta más?</p>
+            <label><input type="checkbox" value="fachada">Fachadas</label><br>
+            <label><input type="checkbox" value="belen">Belenes</label><br>
+            <label><input type="checkbox" value="estructura">Mini estructuras</label>
+          </div>
+
+        </div>
+        <div class="form-input" id="textarea-container">
+          <textarea rows="8" cols="60" placeholder="Nos gustaría leer tus sugerencias..."></textarea><br>
+        </div>
+        <input id="submit" type="submit" value="submit">
+      </form>
+    </div>
+
+  </body>
 </div>
 
 </html>
