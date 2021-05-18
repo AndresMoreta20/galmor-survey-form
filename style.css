@@ -21,7 +21,7 @@ body {
 #form-container {
   background-color: #EADDCA;
   width: 600px;
-  min-width: 600px;
+  min-width: 200px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +30,7 @@ body {
 }
 #survey-form{
   padding: 30px;
+  min-width: 400px;
 }
 #title {
   text-align: center;
@@ -54,6 +55,28 @@ body {
 #number {
   width: 10%;
 }
+#dropdown {
+  background-color: white;
+  color: gray;
+  border-color: blanchedalmond;
+}
+option {
+  color: black;
+}
+#submit-container {
+  text-align: right;
+}
+#submit {
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+}
+#submit:hover {
+  
+  box-shadow: 0 0 0 0.2rem rgb(211, 132, 158);
+}
+
 
 
   

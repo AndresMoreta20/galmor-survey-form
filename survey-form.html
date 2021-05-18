@@ -34,8 +34,8 @@
 
         <div class="form-input" id="dropdown-container">
           <label for="dropdown">¿Qué servicio le interesa?</label><br>
-          <select id="dropdown">
-            <option value="cursos">Cursos</option>
+          <select class="input-box" id="dropdown" ><option disable selected value>Seleccione una opción</option>
+            <option value="cursos" >Cursos</option>
             <option value="personalizados">Miniaturas personalizadas</option>
             <option value="visita">Visita nuestra tienda</option>
           </select>
@@ -56,9 +56,12 @@
 
         </div>
         <div class="form-input" id="textarea-container">
-          <textarea rows="8" cols="60" placeholder="Nos gustaría leer tus sugerencias..."></textarea><br>
+          <p>Sugerencias</p>
+          <textarea id="text-area" rows="10" cols="60" placeholder="Nos gustaría leer tus sugerencias..."></textarea><br>
         </div>
+        <div id="submit-container">
         <input id="submit" type="submit" value="submit">
+      </div>
       </form>
     </div>
 
