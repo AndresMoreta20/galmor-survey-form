@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+:root{
+  --clr-primary-pink: #EADDCA;
+
+  --ff-primary: 'Roboto Slab', serif;
+}
 
 #wrapper {
   margin-left:auto;
@@ -14,40 +19,38 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
+  font-family: var(--ff-primary);
+  font-size: 1.13rem;
   
 }
 #form-container {
-  background-color: #EADDCA;
-  width: 600px;
-  min-width: 200px;
+  /* width: min(90%, 70.5rem); */
+  background-color: var(--clr-primary-pink);
+  width: 38rem;
+  min-width: 12.5rem;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 30px;
+  margin-inline: auto;
+  border-radius: 1.9rem;
   margin-top: 15%;
 }
 #survey-form{
-  padding: 30px;
-  min-width: 400px;
+  padding: 1.9rem;
+  min-width: 25rem;
 }
-#title {
+#title, #description {
   text-align: center;
 }
-#description {
-  text-align: center;
-}
+
 .form-input {
   padding: 10px;
 }
 .input-box {
   width: 60%;
-  height: 30px;
-  border-radius: 10px;
+  height: 1.9rem;
+  border-radius: 0.625rem;
   border: none;
 }
-.input-box:focus {
+.input-box:focus #submit{
   border-color: rgb(211, 132, 158);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgb(211, 132, 158);
@@ -77,6 +80,12 @@ option {
   box-shadow: 0 0 0 0.2rem rgb(211, 132, 158);
 }
 
-
+@media (max-width: 500px){
+  html, body {
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+  
+}
 
   
